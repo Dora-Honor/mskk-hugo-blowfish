@@ -1,10 +1,10 @@
-+++
-date = '2025-12-27T20:41:17+09:00'
-draft = false
-title = 'Hello World'
-tags = [ "example1", "example2" ]
-categories = ["example"]
-+++
+---
+date: '2025-12-27T20:41:17+09:00'
+draft: false
+title: 'Hello World'
+tags: [ "example1", "example2" ]
+categories: ["example"]
+---
 
 这是我的第一篇博文。
 

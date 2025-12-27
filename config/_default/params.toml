@@ -53,7 +53,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "/img/background.webp" # used in: hero, and card
-  showRecent = false
+  showRecent = true
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts/"
@@ -91,6 +91,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
   showAuthorsBadges = false
   showWordCount = true
+  showComments = true
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   showZenMode = false
 
