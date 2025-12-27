@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://your_domain.com/"
+baseURL = "https://hugo2.dorahonor.me/"
 defaultContentLanguage = "zh-cn"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
@@ -15,6 +15,8 @@ buildDrafts = false
 buildFuture = false
 
 enableEmoji = true
+
+hasCJKLanguage = true
 
 # googleAnalytics = "G-XXXXXXXXX"
 

@@ -1,0 +1,54 @@
+name: Deploy Hugo site to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *'  # 每天每小时触发一次
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 允许 GITHUB_TOKEN 写入仓库
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-hugo-resources
+        with:
+          path: resources
+          key: ${{ env.cache-name }}
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "^1.25.5"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build
+        run: hugo --minify --gc
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+          clean: true          # 部署前清空 gh-pages 分支
+          single-commit: true  # 只保留一次提交，保持分支干净
+
+          # personal_token: ${{ secrets.HUGO_DEPLOY }}
+          # publish_branch: gh-pages
+          # publish_dir: ./public
+          # cname: hugo2.dorahonor.me
+          # external_repository: Dora-Honor/mskk-hugo-blowfish
