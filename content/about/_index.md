@@ -1,6 +1,7 @@
-+++
-title = "关于我"
-layout = "page"
-+++
+---
+title: "关于我"
+layout: "page"
+background: "/img/background.webp"
+---
 
 这里可以写你的简介、博客说明、技术栈等内容。
