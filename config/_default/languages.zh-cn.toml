@@ -1,0 +1,37 @@
+disabled = false
+languageCode = "zh-cn"
+languageName = "中文"
+weight = 1
+title = "mskk 的个人博客"
+
+[params]
+  displayName = "中文"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  description = "大家我都喜欢哦"
+  copyright = "Copyright © 2025 Dora Honor"
+
+[params.author]
+  name = "Dora Honor"
+  email = "dorahonor903@163.com"
+  image = "img/user.webp"
+  imageQuality = 96
+  headline = "大家我都喜欢哦"
+  bio = "大家我都喜欢哦"
+  links = [
+    { email = "mailto:dorahonor903@163.com" },
+    { link = "https://link-to-some-website.com/" },
+    { bluesky = "https://bsky.app/profile/dora-honor.bsky.social" },
+    { facebook = "https://www.facebook.com/dora.honor.944" },
+    { github = "https://github.com/Dora-Honor" },
+    { instagram = "https://instagram.com/dora_honor" },
+    { spotify = "https://open.spotify.com/user/31tnk5f4als6u4r7kcg2mj2dqq4a" },
+    { steam = "https://steamcommunity.com/id/dorahonor" },
+    { telegram = "https://t.me/dora_honor" },
+    { threads = "https://threads.net/@dora_honor" },
+    { x-twitter = "https://x.com/dora_honor" },
+    { youtube = "https://youtube.com/@dorahonor_mskk" },
+  ]
