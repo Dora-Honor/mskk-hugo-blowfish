@@ -1,0 +1,11 @@
+[[links]]
+title = "Blowfish"
+description = "A powerful Hugo theme"
+website = "https://blowfish.page/zh-cn/"
+avatar = "https://blowfish.page/img/logo.png"
+
+[[links]]
+title = "Hugo"
+description = "The world’s fastest framework"
+website = "https://gohugo.io"
+avatar = "https://gohugo.io/images/hugo-logo-wide.svg"
