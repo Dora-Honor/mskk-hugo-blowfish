@@ -17,32 +17,32 @@
 
 [[main]]
   name = "博文"
-  pageRef = "posts/"
+  pageRef = "posts"
   weight = 15
 
 [[main]]
   name = "归档"
-  pageRef = "archives/"
+  pageRef = "archives"
   weight = 20
 
 [[main]]
   name = "标签"
-  pageRef = "tags/"
+  pageRef = "tags"
   weight = 25
 
 [[main]]
   name = "分类"
-  pageRef = "categories/"
+  pageRef = "categories"
   weight = 30
 
 [[main]]
   name = "友链"
-  pageRef = "links/"
+  pageRef = "links"
   weight = 40
 
 [[main]]
   name = "关于"
-  pageRef = "about/"
+  pageRef = "about"
   weight = 100
 
 #[[main]]
