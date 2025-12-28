@@ -121,46 +121,26 @@ code, pre {
     font-family: var(--font-mono);
 }
 
-.links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
+a.friend-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
 }
+a.friend-link:hover { transform: translateY(-2px); }
 
-.link-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.2rem;
-  border-radius: 16px;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
+.friend-link-div { display: flex; align-items: center; padding: 16px; }
+.friend-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; margin-right: 12px; }
+.friend-name { font-size: 16px; font-weight: bold; color: #444; margin: 0; }
+.friend-bio { font-size: 14px; color: #666; margin: 4px 0 0 0; }
 
-.link-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
-}
-
-.link-avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-}
-
-.link-info h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.link-info p {
-  margin: .3rem 0 0;
-  font-size: .9rem;
-  opacity: .8;
-}
-
-html.dark .link-card {
-  background: rgba(30, 30, 30, 0.9);
-}
+/* 夜间模式适配 */
+.dark .friend-link { background-color: #2d3748; box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05); }
+.dark .friend-name { color: #e2e8f0; }
+.dark .friend-bio { color: #a0aec0; }
